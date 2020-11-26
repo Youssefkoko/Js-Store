@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>About | Comfy</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar pages">
+      <div class="nav-center">
+        <!-- links -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars">
+            </i>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link"></a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="about.html" class="nav-link"></a>About</li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <img src="./images/logo-black.svg" alt="logo" class="nav-logo">
+        <!-- cart icon -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <section class="page-hero">
+      <section class="section-center">
+        <h3 class="page-hero-title">Home /  About</h3>
+      </section>
+    </section>
+    <!-- Sidebar -->
+    <div class="sidebar-overlay ">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+            <i class="fas fa-home fa-fw"></i>
+            Home
+            </a>
+          </li>
+          <li><a href="product.html" class="sidebar-link">
+            <i class="fas fa-couch fa-fw"></i>
+            Products
+          </a></li>
+          <li><a href="about.html" class="sidebar-link">
+            <i class="fas fa-book fa-fw"></i>
+            About
+          </a></li>
+        </ul>
+      </aside>
+    </div>
+    <!-- Cart Overlay -->
+    <div class="cart-overlay">
+      <aside class="cart ">
+        <button class="cart-close"> <i class="fas fa-times"></i> </button>
+        <header>
+          <h3 class="text-slanted ">your bag</h3>
+        </header>
+        <!-- Cart items -->
+        <div class="cart-items">
+          <!-- single item  -->
+          <article class="cart-item" data-id="">
+            <img src="./images/main-bcg.jpeg" class="cart-item-img" alt="name">
+            <!-- Item info -->
+            <div>
+              <h4 class="cart-item-name">banana</h4>
+              <p class="cart-item-price">$13.99</p>
+              <button class="cart-item-remove-btn"></button>
+            </div>
+            <!-- Amount toggle  -->
+            <div>
+              <button class="cart-item-increase-btn"> <i class="fas fa-chevron-up"></i></button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn"> <i class="fas fa-chevron-down"></i></button>
+            </div>
+          </article>
+          <!-- End single item  -->
+        </div>
+        <!-- End Cart items -->
+        <footer> 
+          <h3 class="cart-totatl text-slanted">total: $12.99</h3>
+          <div class="cart-checkout btn">checkout</div>
+        </footer>
+      </aside>
+    </div>
+    <!--End Cart Overlay -->
+    <!-- About  -->
+    <section class="section-center aboutpage">
+      <div class="title">
+        <h2><span>/</span>Our History</h2>
+        <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error impedit incidunt rem similique exercitationem voluptatum sint a vitae. Amet nam saepe velit, animi reiciendis, distinctio eos doloremque dolores soluta qui eius ipsa asperiores? Minima laboriosam sed ut recusandae iusto, autem distinctio at dolorem cupiditate soluta perferendis accusamus quidem eveniet enim, esse sit. Qui odit illo architecto, nulla dicta est cupiditate explicabo corporis suscipit distinctio quis eum incidunt tenetur nemo. Rerum, enim quos? Unde, ducimus perspiciatis saepe quisquam eligendi sint.</p>
+      </div>
+    </section>
+    <script type="module" src="./src/pages/about.js"></script>
+  </body>
+</html>
