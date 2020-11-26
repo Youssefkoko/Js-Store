@@ -14,7 +14,16 @@ const getElement = (selection) => {
   throw new Error(`Please check "${selection}" selector, no such element exist`)
 }
 
-const formatPrice = () => {}
+const formatPrice = (price) => {
+  const formattedPrice  = new Intl.NumberFormat('nl-NL', 
+  { 
+    style: 'currency', 
+    currency: 'EUR'
+   }).format((price /100).toFixed(2));
+
+  return formattedPrice;
+
+}
 
 const getStorageItem = (key) => {
   let storageItem = localStorage.getItem(key);
