@@ -4,7 +4,7 @@ import './src/cart/toggleCart.js';
 import './src/cart/setupCart.js';
 // specific imports
 import fetchProducts from './src/fetchProducts.js';
-// Store just an array of products returned from that file 
+// Store* just an array of products returned from that file 
 import { setupStore, store } from './src/store.js';
 import display from './src/displayProducts.js';
 import { getElement } from './src/utils.js';
@@ -19,7 +19,7 @@ const init = async () => {
         return product;
       }
     });
-    console.log(featured);
+    display(featured, getElement('.featured-center'))
   }
   
 };
