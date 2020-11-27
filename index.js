@@ -20,7 +20,9 @@ const init = async () => {
       }
     });
     display(featured, getElement('.featured-center'))
+    
   }
   
 };
 window.addEventListener('DOMContentLoaded', init);
+

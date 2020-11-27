@@ -27,6 +27,13 @@ const display = (featuredProducts, element) => {
   </article>    
     `
   }).join('');
+  element.addEventListener('click', function (e){
+    const parent = e.target.parentElement;
+    if(parent.classList.contains('product-cart-btn')){
+      const id = parent.dataset.id;
+      addToCart(id)
+    }
+  })
 };
 
 export default display;
