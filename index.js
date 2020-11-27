@@ -21,6 +21,7 @@ const init = async () => {
     });
     display(featured, getElement('.featured-center'))
     
+    
   }
   
 };
