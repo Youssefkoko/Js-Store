@@ -12,7 +12,7 @@ const display = (featuredProducts, element) => {
     <div class="product-container">
       <img src="${image}" alt="product" class="product-img img">
       <div class="product-icons">
-        <a href="product-html?id=${id}" class="product-icon">
+        <a href="product.html?id=${id}" class="product-icon">
           <i class="fas fa-search"></i>
         </a>
         <button class="product-cart-btn product-icon" data-id="${id}">
