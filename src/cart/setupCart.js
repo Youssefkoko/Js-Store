@@ -79,6 +79,24 @@ function increaseAmount(id) {
   return newAmount;
 }
 
+function decreaseAmount(id) {
+  let newAmount;
+  cart = cart.map(cartItem => {
+    newAmount = cartItem.amount - 1;
+    if (cartItem.id === id) {
+      cartItem = {
+        ...cartItem,
+        amount: newAmount
+      }
+
+    }
+    return cartItem;
+  })
+  return newAmount;
+}
+
+
+
 function removeItem(id) {
   cart = cart.filter((item) => item.id !== id)
 }
@@ -93,6 +111,21 @@ function setUpCartFuncionlity() {
     if (elem.classList.contains('cart-item-remove-btn')) {
       removeItem(id);
       parent.parentElement.remove();
+    }
+    // increae 
+    if (parent.classList.contains('cart-item-increase-btn')) {
+      const newAmount = increaseAmount(parentID);
+      parent.nextElementSibling.textContent = newAmount;
+    }
+    // decrease 
+    if (parent.classList.contains('cart-item-decrease-btn')) {
+      const newAmount = decreaseAmount(parentID);
+      if (newAmount === 0) {
+        removeItem(parentID);
+        parent.parentElement.parentElement.remove();
+      }
+
+      parent.previousElementSibling.textContent = newAmount;
     }
     displayCatItemCount()
     displayCartTotal()
